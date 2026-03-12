@@ -1,0 +1,11 @@
+# cPanel Git Auto-Deploy Configuration
+# Update DEPLOYPATH to match your cPanel document root
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/username/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp favicon.svg $DEPLOYPATH
+    - /bin/cp apple-touch-icon.png $DEPLOYPATH
+    - /bin/cp -r assets/ $DEPLOYPATH
