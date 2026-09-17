@@ -1,6 +1,6 @@
 # Tseleng — Marketing Website
 
-Static marketing website for **Tseleng**, Botswana's WhatsApp-based driver theory test prep service.
+Static marketing website for **Tseleng**, Botswana's driver theory test prep web app at [tseleng.co.bw](https://tseleng.co.bw).
 
 Built by [Kgaile Digital Solutions](https://kgailedigital.co.bw).
 
@@ -16,13 +16,14 @@ Search for `TODO` comments in `index.html` and update the following:
 
 | What | Where | Example |
 |------|-------|---------|
-| WhatsApp Business number | All `href="https://wa.me/..."` links | ✅ 26771211867 |
+| Tseleng app URLs (signup/login/subscribe) | All `href="https://tseleng.co.bw/..."` links | ✅ https://tseleng.co.bw |
+| WhatsApp support number | Contact Support link in footer | ✅ 26771211867 |
 | Meta Pixel ID | `<head>` section (uncommented) | ✅ 1421102126173317 |
 | Google Analytics ID | `<head>` section (uncommented) | ✅ G-B7C4W5YSF3 |
-| OG image domain | `og:image` and `twitter:image` meta tags | ✅ https://tseleng.co.bw |
+| OG image | `og:image` and `twitter:image` meta tags (served by the web app) | ✅ https://tseleng.co.bw/og-image.png |
 | Facebook page URL | Footer social link | ✅ https://www.facebook.com/tselengbw |
 | Instagram page URL | Footer social link | ✅ https://instagram.com/tselengbw |
-| Phone mockup image | Hero section `<img>` | ✅ assets/images/pedestrian-crossing.png |
+| Hero mockup image | Hero section `<img>` | ✅ assets/images/pedestrian-crossing.png |
 | cPanel deploy path | `.cpanel.yml` | ⏳ /home/yourusername/public_html/ |
 
 ## Deployment
@@ -44,12 +45,14 @@ Search for `TODO` comments in `index.html` and update the following:
 ```
 tseleng-website/
 ├── index.html           ← Main (and only) page
+├── data-protection-policy.html ← Data Protection Policy
 ├── favicon.png          ← Favicon (PNG)
 ├── favicon.svg          ← Favicon (SVG, scalable)
 ├── apple-touch-icon.png ← Apple Touch Icon (180×180)
 ├── assets/
 │   └── images/
-│       ├── og-image.png ← Open Graph preview image (1200×630)
+│       ├── logo.png              ← Official Tseleng logo
+│       ├── og-image.png          ← Open Graph preview image (1200×630)
 │       └── pedestrian-crossing.png ← Hero mockup image
 ├── .gitignore
 ├── .cpanel.yml          ← Auto-deploy config
